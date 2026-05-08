@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rubel Roy – Data Science Student & Aspiring AI Engineer. Portfolio showcasing projects, skills, and education." />
+  <title>Rubel Roy | Data Scientist</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ==================== LOADER ==================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">RR</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ==================== CURSOR ==================== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <a href="#home" class="logo" aria-label="Rubel Roy Home">
+      <span class="logo-accent">R</span>UBEL <span class="logo-accent">R</span>OY
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#edu" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <div id="vanta-wrapper">
+    <canvas id="vanta-canvas" aria-hidden="true"></canvas>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+
+        <!-- LEFT: Text -->
+        <div class="hero-text reveal-left">
+          <div class="hero-badge">
+            <span class="badge-dot"></span> Available for Opportunities
+          </div>
+          <h1>
+            Hello, I'm<br />
+            <span class="gradient-text">Rubel Roy</span>
+          </h1>
+          <div class="hero-role">
+            <span class="role-prefix">I'm a </span>
+            <span class="typing-animation" aria-live="polite">Data Scientist Student</span>
+            <span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-desc">
+            Master's student in Data Science with a background in Physics.
+            Passionate about machine learning, statistical modeling, and
+            uncovering insights hidden in complex data.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/coder-d-Eyeden" aria-label="GitHub" target="https://github.com/coder-d-Eyeden" rel="noopener"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/rubel-roy001/" aria-label="LinkedIn" target="https://www.linkedin.com/in/rubel-roy001/" rel="noopener"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="mailto:royrubel50@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Image -->
+        <div class="hero-image reveal-right">
+          <div class="image-frame">
+            <div class="image-glow"></div>
+            <div class="image-ring ring-1"></div>
+            <div class="image-ring ring-2"></div>
+            <picture>
+              <source media="(max-width: 768px)" srcset="hola.jpeg" />
+              <img src="hola.jpeg" alt="Rubel Roy - Data Science Student" class="profile-img" loading="eager" />
+            </picture>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <div class="scroll-arrow">
+          <i class='bx bx-chevron-down'></i>
+        </div>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about reveal" id="about">
+      <div class="section-header">
+        <span class="section-tag">Who Am I</span>
+        <h2>About <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-img-frame">
+            <img src="hola.jpeg" alt="Rubel Roy" loading="lazy" />
+            <div class="about-img-deco"></div>
+          </div>
+          <div class="about-stats">
+            <!-- <div class="stat-item">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years of Coding</span>
+            </div> -->
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <h3>Aspiring Data Scientist &amp; AI Enthusiast</h3>
+          <p>
+            I am a dedicated tech enthusiast and aspiring Data Scientist with a strong foundation in Machine Learning. My passion lies in uncovering hidden patterns within data and translating them into actionable insights through predictive modeling.
+          </p>
+          <p>
+            Throughout my journey, I have developed a deep interest in Deep Learning and neural networks, constantly seeking to understand how intelligent systems can solve complex, real-world problems. I am committed to continuous learning and eager to apply my technical curiosity to build data-driven solutions that are both innovative and impactful.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Statistical Analysis</span>
+            <span class="tag">Python</span>
+            <span class="tag">Data Visualization</span>
+            <span class="tag">Neural Networks</span>
+          </div>
+          <a href="https://drive.google.com/drive/folders/18ePD20x5yZgW9rwVVK3bQPj0OIDP-jwW?usp=drive_link" class="btn btn-primary" download aria-label="Download Resume">
+            <i class='bx bx-download'></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+  </div><!-- end vanta-wrapper -->
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section class="education reveal" id="edu">
+    <div class="section-header">
+      <span class="section-tag">Academic Journey</span>
+      <h2 class="heading">Education</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-connector">
+          <div class="timeline-dot"><i class='bx bxs-graduation'></i></div>
+        </div>
+        <div class="timeline-card">
+          <div class="tcard-header">
+            <span class="tcard-year">2025 – 2027</span>
+            <span class="tcard-badge">Current</span>
+          </div>
+          <h3>M.Sc. in Data Science</h3>
+          <p class="tcard-institution"><i class='bx bx-buildings'></i> St. Xavier's College (Autonomous), Kolkata</p>
+          <p class="tcard-desc">Specializing in Statistical Learning, Big Data Analytics, Machine Learning, and AI systems. Building a strong mathematical foundation for data-driven problem solving.</p>
+          <div class="tcard-tags">
+            <span>ML</span> <span>DL</span> <span>Statistics</span><span>Big Data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-connector">
+          <div class="timeline-dot"><i class='bx bxs-book-open'></i></div>
+        </div>
+        <div class="timeline-card">
+          <div class="tcard-header">
+            <span class="tcard-year">2020 – 2024</span>
+          </div>
+          <h3>B.Sc. (Hons.) in Physics</h3>
+          <p class="tcard-institution"><i class='bx bx-buildings'></i> Gurudas College, Kolkata</p>
+          <p class="tcard-desc">Developed strong analytical and problem-solving skills. Applied mathematical modeling and statistical methods to physical phenomena.</p>
+          <div class="tcard-tags">
+            <span>Physics</span><span>Mathematics</span><span>Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-connector">
+          <div class="timeline-dot"><i class='bx bxs-school'></i></div>
+        </div>
+        <div class="timeline-card">
+          <div class="tcard-header">
+            <span class="tcard-year">2018 – 2020</span>
+          </div>
+          <h3>Higher Secondary Education</h3>
+          <p class="tcard-institution"><i class='bx bx-buildings'></i> Acharya Prafulla Chandra High School For Boys</p>
+          <p class="tcard-desc">Completed Class XII with Science stream, focusing on Physics, Chemistry, and Mathematics.</p>
+          <div class="tcard-tags">
+            <span>Science</span><span>Physics</span><span>Math</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-connector">
+          <div class="timeline-dot"><i class='bx bxs-school'></i></div>
+        </div>
+        <div class="timeline-card">
+          <div class="tcard-header">
+            <span class="tcard-year">– 2018</span>
+          </div>
+          <h3>Secondary Education</h3>
+          <p class="tcard-institution"><i class='bx bx-buildings'></i> Acharya Prafulla Chandra High School For Boys</p>
+          <p class="tcard-desc">Completed Class X with a strong academic foundation in core subjects.</p>
+          <div class="tcard-tags">
+            <span>Science</span><span>Mathematics</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /timeline -->
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="projects reveal" id="projects">
+    <div class="section-header">
+      <span class="section-tag">What I've Built</span>
+      <h2 class="heading">Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- <article class="project-card reveal">
+        <div class="pcard-img">
+          <img src="web-proj.png" alt="Responsive Portfolio Website" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback')" />
+          <div class="pcard-overlay">
+            <span class="pcard-category">Web Dev</span>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <h3>Responsive Portfolio Website</h3>
+          <p>A modern, futuristic portfolio site built with HTML, CSS, and Vanilla JavaScript featuring Vanta.js animated backgrounds and smooth scroll animations.</p>
+          <div class="pcard-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vanta.js</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article> -->
+
+      <article class="project-card reveal">
+        <div class="pcard-img img-fallback">
+          <div class="pcard-overlay">
+            <span class="pcard-category">Machine Learning</span>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <h3>ML Predictive Model</h3>
+          <p>A machine learning pipeline for predicting outcomes from real-world datasets using regression and classification algorithms with data visualization.</p>
+          <div class="pcard-tech">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pcard-img img-fallback">
+          <div class="pcard-overlay">
+            <span class="pcard-category">Data Analysis</span>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <h3>Data Analysis Dashboard</h3>
+          <p>An interactive data visualization dashboard presenting key metrics and analytical insights from complex datasets using Python and visualization libraries.</p>
+          <div class="pcard-tech">
+            <span>Python</span><span>Plotly</span><span>NumPy</span><span>Seaborn</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="skills-section reveal" id="skills">
+    <div class="section-header">
+      <span class="section-tag">My Toolkit</span>
+      <h2>Technical <span class="gradient-text">Skills</span></h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Technical Skills -->
+      <div class="skills-col reveal-left">
+        <h3 class="skills-subtitle">Technical Proficiency</h3>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Python</span><span class="skill-pct">80%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="80"></div>
+          </div>
+        </div>
+        
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Machine Learning</span><span class="skill-pct">65%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="65"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>CSS3</span><span class="skill-pct">60%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="60"></div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="skills-col reveal-right">
+        <h3 class="skills-subtitle">Professional Skills</h3>
+        <div class="circular-skills">
+
+          <div class="circle-skill" data-percent="90">
+            <div class="circle-wrap">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <circle class="track" cx="50" cy="50" r="40" />
+                <circle class="fill" cx="50" cy="50" r="40" stroke-dasharray="0 251.2" />
+              </svg>
+              <div class="circle-inner">
+                <span class="circle-pct">90%</span>
+              </div>
+            </div>
+            <p>Creativity</p>
+          </div>
+
+          <div class="circle-skill" data-percent="65">
+            <div class="circle-wrap">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <circle class="track" cx="50" cy="50" r="40" />
+                <circle class="fill" cx="50" cy="50" r="40" stroke-dasharray="0 251.2" />
+              </svg>
+              <div class="circle-inner">
+                <span class="circle-pct">65%</span>
+              </div>
+            </div>
+            <p>Communication</p>
+          </div>
+
+          <div class="circle-skill" data-percent="75">
+            <div class="circle-wrap">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <circle class="track" cx="50" cy="50" r="40" />
+                <circle class="fill" cx="50" cy="50" r="40" stroke-dasharray="0 251.2" />
+              </svg>
+              <div class="circle-inner">
+                <span class="circle-pct">75%</span>
+              </div>
+            </div>
+            <p>Problem Solving</p>
+          </div>
+
+          <div class="circle-skill" data-percent="85">
+            <div class="circle-wrap">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <circle class="track" cx="50" cy="50" r="40" />
+                <circle class="fill" cx="50" cy="50" r="40" stroke-dasharray="0 251.2" />
+              </svg>
+              <div class="circle-inner">
+                <span class="circle-pct">85%</span>
+              </div>
+            </div>
+            <p>Teamwork</p>
+          </div>
+
+        </div><!-- /circular-skills -->
+      </div>
+
+    </div><!-- /skills-grid -->
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact reveal" id="contact">
+    <div class="section-header">
+      <span class="section-tag">Let's Talk</span>
+      <h2>Contact <span class="gradient-text">Me</span></h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal-left">
+        <p class="contact-tagline">Have a project in mind? Let's build something amazing together.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:contact@gmail.com">royrubel50@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- <div class="contact-item">
+          <div class="contact-icon"><i class='bx bx-phone'></i></div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+910123456789">+91 0123456789</a>
+          </div>
+        </div> -->
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class='bx bx-map'></i></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span>Kolkata, West Bengal, India</span>
+          </div>
+        </div>
+
+        <div class="social-links contact-social">
+          <a href="https://github.com/coder-d-Eyeden" aria-label="GitHub" target="https://github.com/coder-d-Eyeden" rel="noopener"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/rubel-roy001/" aria-label="LinkedIn" target="https://www.linkedin.com/in/rubel-roy001/" rel="noopener"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+      </div>
+
+      <!-- <div class="contact-form reveal-right">
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Rubel Roy" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class='bx bx-send'></i> Send Message
+          </button>
+          <div class="form-status" id="form-status" aria-live="polite"></div>
+        </form>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo"><span class="logo-accent">R</span>UBEL <span class="logo-accent">R</span>OY</a>
+          <p>Data Scientist in the making. Turning data into insights, one model at a time.</p>
+          <div class="social-links">
+            <a href="https://github.com/coder-d-Eyeden" aria-label="GitHub" target="https://github.com/coder-d-Eyeden" rel="noopener"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/rubel-roy001/" aria-label="LinkedIn" target="https://www.linkedin.com/in/rubel-roy001/" rel="noopener"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="mailto:royrubel50@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+           
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Technologies</h4>
+          <ul>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Deep Learning</a></li>
+            <li><a href="#">Data Analysis</a></li>
+            <li><a href="#">Web Development</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Rubel Roy. Crafted with <i class='bx bxs-heart' style="color:#00f0ff"></i> in Kolkata.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class='bx bx-up-arrow-alt'></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
